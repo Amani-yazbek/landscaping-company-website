@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#EEF9F3;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 9px;
+}
+.Header {
+    width: 100%;
+    height: 8vh;
+    background-image: linear-gradient(90deg, #074143, #0E7E83);
+}
+.img3 , .img2 , .img1 {
+    position: relative;
+    background-color: transparent;
+}
+.img3 {
+    width: 140px;
+    height: 140px;
+    bottom: 20px;
+    left: -90px;
+}
+.img2 {
+    width: 210px;
+    height: 180px;
+    top: 60px;
+    z-index: 2;
+}
+.img1 {
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    right: -50px;
+}
+p {
+width: 60%;
+text-align: center !important;
+text-transform: uppercase;
+}
+
+/*display scroll numbers */
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none; 
+    appearance: none;
+}
+.digit {
+    display: flex;
+    gap: 20px;
+}
+.digit input {
+    width: 54px;
+    height: 68px;
+    background-color: rgba(18, 28, 23, 0.13);
+    border: none;
+    border-radius: 20px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33.89px;
+    text-align: center;
+}
+
+.digit input:focus {
+    outline: none;
+    border: 2px solid rgba(20, 176, 93, 1);
+}
+
+.container a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(14, 126, 131, 1);
+}
+.container a:hover {
+    text-decoration: underline;
+}
+
+.verify-button {
+    background-color: rgba(43, 231, 132, 1);
+    border: 1px solid rgba(18, 28, 23, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 304px;
+    height: 64px;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: center;
+    margin-top: -15px;   
+}
+.verify-button:hover {
+    background-color: hwb(147 19% 29%);
+}

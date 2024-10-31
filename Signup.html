@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="charset" content="UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0" />
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="container , signup">
+        <header class="Header"></header>
+        <div class="info-section">
+            <h3 class="Heading-bold-03">SIGN UP</h3>
+            <h3 class="Body-02">PROFILE PICTURE</h3>
+            <div class="profile-picutre"><img src="../Images/clarity_user-line big.png" alt="user image"></div>
+            <form action="verification.html" method="post">
+                <label for="mail">EMAIL ADDRESS</label>
+                <input type="email" id="mail" name="user" placeholder="EXAMPLE@GMAIL.COM" required />
+
+                <label for="phone">PHONE NUMBER</label>
+                <input id="phone" name="phone" placeholder="***********" />
+
+                <label for="id">USER NAME</label>
+                <input type="user" id="id" name="user-name" placeholder="@USER_NAME" />
+
+                <label for="pass">PASSWORD</label>
+                <input type="password" id="pass" name="user-pass" placeholder="***********" required />
+
+                <label for="repass">RE-ENTER PASSWORD</label>
+                <input type="password" id="repass" name="user-pass" placeholder="***********" />   
+                <div class="city-group">
+                    <label for="country">COUNTRY</label>
+                    <label for="city">CITY</label>
+                    <input id="country" name="country" />
+                    <input id="city" name="city" />
+                </div>
+                <button type="submit"><a href="verification.html">CREATE ACCOUNT</a></button>
+                <p class="Body-03">HAVE AN ACCOUNT? <a href="index.html" class="Body-03">SIGN IN</a></p>
+            </form>
+        </div>
+        <div class="signup-image">
+            <img class="image" src="../Images/Rectangle 13.jpg" alt="Rectangle image" />
+            <div class="circle">
+                <img class="logo-pass" src="../Images/logo.png" alt="company-logo">
+                <figcaption class="Body-01">The Construction and landscaping company</figcaption>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

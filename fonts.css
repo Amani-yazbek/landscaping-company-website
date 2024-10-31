@@ -1,0 +1,226 @@
+/* Styles for large screens */
+.Heading-01 {
+    font-family: 'Lato', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 115.2px;
+    text-align: left;
+}
+.Heading-02 {
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: left;
+}
+.Heading-03 {
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: left;
+}
+.Heading-semi-bold {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+}
+.Body-01 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33.89px;
+    text-align: left;
+}
+.Body-02 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: left;
+}
+.Body-03 {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    text-align: left;
+}
+.Heading-bold-01 {
+    font-family: 'Lato', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 115.2px;
+    text-align: left;
+}
+.Heading-bold-02{
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    text-align: left;
+    }
+    .Heading-bold-03{
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    }
+    .Body-bold-00 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+    text-align: center;
+    }
+    .Body-bold-01 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    text-align: left;
+    }
+    .Body-bold-02 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    }
+    .Body-bold-03 {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18.15px;
+    text-align: left;
+    }
+
+
+/* for medium screens */
+@media (max-width: 1400px) {
+    .Heading-01 {
+        font-size: 72px; 
+        line-height: 86.4px; 
+    }
+    .Heading-02 {
+        font-size: 48px;
+        line-height: 57.6px;
+    }
+    .Heading-03 {
+        font-size: 36px; 
+        line-height: 43.2px;
+    }
+    .Heading-semi-bold {
+        font-size: 32px;
+        line-height: 38.4px;
+        text-align: center;
+    }
+    .Body-01 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .Body-02 {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+    .Body-03 {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .Heading-bold-01 {
+        font-size: 72px;
+        line-height: 86.4px;
+    }
+    .Heading-bold-02 {
+        font-size: 48px;
+        line-height: 57.6px;
+    }
+    .Heading-bold-03 {
+        font-size: 36px;
+        line-height: 43.2px;
+    }
+    .Body-bold-00 {
+        font-size: 30px;
+        line-height: 36.3px;
+        text-align: center;
+    }
+    .Body-bold-01 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .Body-bold-02 {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+    .Body-bold-03 {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+}
+
+/* for small screens */
+@media (max-width: 768px) {
+    .Heading-01 {
+        font-size: 48px; 
+        line-height: 57.6px;
+    }
+    .Heading-02 {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    .Heading-03 {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .Heading-semi-bold {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .Body-01 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .Body-02 {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .Body-03 {
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    .Heading-bold-01 {
+        font-size: 48px;
+        line-height: 57.6px;
+    }
+    .Heading-bold-02 {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    .Heading-bold-03 {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .Body-bold-00 {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+    .Body-bold-01 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .Body-bold-02 {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .Body-bold-03 {
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+}
+
+

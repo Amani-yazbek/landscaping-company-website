@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color:#EEF9F3;
+    font-size: 16px;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "head head" "left right";
+    height: 100%;
+    width: 100%;
+}
+.Header {
+    width: 100%;
+    height: 8vh;
+    grid-area: head;
+    background-image: linear-gradient(90deg, #074143, #0E7E83);
+}
+
+/* sign-in page */
+.signin-image {
+    grid-area: right;
+    width: 100%;
+    height: 100%;
+}
+
+.signin-section , .password-section , .info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.signin-section { 
+    grid-area: left;
+}
+.password-section , .info-section {
+    grid-area: right;
+}
+
+.logo {
+    width: 7.5rem;
+    height: 6rem;
+}
+
+.signin-section form , .password-section form , .info-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-section label , .password-section label , .info-section label{
+    margin-bottom: 5px;
+    color: #121C17;
+    font-family: Inter;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.signin-section input , .password-section input{
+    max-width: 400px;
+    height: 46px;
+    font-size: 1em;
+    background-color: rgba(217, 217, 217, 0.5);
+    border: 1px solid rgba(18, 28, 23, 1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    padding-left: 65px;
+}
+
+input::placeholder {
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+/* icon inside the input field */
+#mail , #pass , #repass , #phone , #id {
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+#pass , #repass{
+    background-image: url(../Images/carbon_password.png);
+}
+#mail {
+    background-image: url(../Images/ic_outline-email.png);
+}
+#phone {
+    background-image: url(../Images/ph_phone.png);
+}
+#id {
+    background-image: url(../Images/clarity_user-line.png);
+}
+
+.signin-section .links p {
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 20px;
+    color:rgba(18, 28, 23, 1);
+}
+
+.signin-section .links a {
+    color: rgba(14, 126, 131, 1);
+    text-decoration: none;
+}
+
+.signin-section .links a:hover {
+    text-decoration: underline;
+}
+
+/* display error message when insert wrong information */
+.signin-section #error {
+    /* display: none; */
+    color: rgba(216, 129, 79, 1);
+    border: 3px solid rgba(216, 129, 79, 1);
+    border-radius: 5px;
+    max-width: 400px;
+    height: 46px;
+    text-align: center;
+    margin-top: 10px;
+    align-content: center;
+    padding: 5px;
+}
+
+.signin-section button , .password-section button , .info-section button {
+    max-width: 204px;
+    height: 49px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: hwb(147 32% 11%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 1em;
+}
+.signin-section button {
+    margin-left: 4rem;
+}
+.password-section button {
+    margin-left: 8rem;
+}
+.info-section button{
+    margin-left: 10.5rem;
+}
+
+.signin-section button:hover , .password-section button:hover , .info-section button:hover {
+    background-color: hwb(147 19% 29%);
+}
+
+/* Error page #1 */
+.grey-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 28, 23, 0.5);
+    box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-message {
+    max-width: 584px;
+    min-height: 309px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.error-message .Body-02 {
+    color: rgba(61, 98, 79, 1);
+    text-wrap: wrap;  
+}
+.error-message .Body-bold-02 {
+    text-align: center;
+    color: rgba(229, 91, 91, 1);
+}
+.error-message button {
+    border: none;
+}
+.error-message hr {
+    width: 508px;
+    border: 3px solid rgba(61, 98, 79, 0.5);
+    align-self: center;
+}
+
+/* Forget password Page */
+.pass-image {
+    grid-area: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pass-image .image {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(238, 249, 243, 0.5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    min-width: 26em;
+    min-height: 26em;
+    z-index: 2;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-pass {
+    max-width: 190px;
+    max-height: 150px;
+    padding: 15px;
+    z-index: 3;
+    background-color: transparent;
+}
+.pass-image figcaption , .signup-image figcaption {
+    text-wrap: wrap;
+    text-align: center;
+    width: 360px;
+    color: rgba(18, 28, 23, 1);
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.password-section a , .info-section a{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+/*for small screens */
+@media screen and (max-width: 768px){
+    .signin-image {
+        display: none;
+    }
+    .container.sign{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "left";
+    }
+}
+@media screen and (max-width: 768px){
+    .pass-image {
+        display: none;
+    }
+    .container.password{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "right";
+    }
+}
